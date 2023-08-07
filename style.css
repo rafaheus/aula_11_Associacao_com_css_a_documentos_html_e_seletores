@@ -1,0 +1,62 @@
+/* ordem de preferencia 
+id > classe > tipo */
+
+/* h1,
+p {
+    color: blue;
+}
+
+.vermelho {
+    color: red;
+} */
+
+h1 {
+    color: blue;
+}
+
+i {
+    color: red;
+}
+
+ul {
+    background: rgb(50, 52, 155)
+}
+
+p {
+    color: orange;
+}
+
+.vermelho {
+    color: red;
+}
+
+#p2,
+a,
+h1 {
+    font-size: 24px;
+    color: blue
+}
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* descendencia */
+h1 i {
+    color: yellow;
+}
+
+/* filho */
+h1>i {
+    color: green;
+}
+
+/* irmaos / vizinhos, pega apenas os elementos que vem depois do primeiro elemento, se tivesse um p antes de ul, n seria editado */
+ul~p {
+    text-decoration: underline;
+}
+
+/* vizinho ao lado, se existir outro elemento no meio, a configuraçao nao é realizada */
+ul+p {
+    text-decoration: none;
+}
